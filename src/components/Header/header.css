@@ -1,0 +1,15 @@
+.HeaderMainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.HeaderTabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.HeaderTab{
+    margin: 15px;
+}

@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../img/paperbackground.jpg'), linear-gradient(to left, #F4F4F4, #CCCCCC);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: auto;
+}
+
+.MainLabel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.SocialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.SocialMediaBlock{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footerLogo{
+    height: 100px;
+    width: 100px;
+}
