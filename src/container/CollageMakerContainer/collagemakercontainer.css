@@ -1,0 +1,25 @@
+.CollageMakerContainer__MainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.CollageMakerContainer__MainDiv__ImageDisplayOptions{
+    background-image: linear-gradient(180deg,yellow,green);
+}
+.CollageMakerContainer__MainDiv__ImageDisplayOptions__Images{
+    margin: 50px;
+    border: 1px dotted black;
+    height: 50vh;
+    width: 50vw;
+}
+.CollageMakerContainer__MainDiv__ImageDisplayOptions__ListBox{
+
+}
+
+.CollageMakerContainer__MainDiv__ImagesUploader{
+
+}
+.CollageMakerContainer__MainDiv__ImagesUploader__Dropbox{
+
+}
+    

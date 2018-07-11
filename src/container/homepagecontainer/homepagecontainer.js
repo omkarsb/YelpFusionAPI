@@ -6,11 +6,11 @@ export default class HomePageContainer extends Component{
         const url = 'https://gfycat.com/gifs/detail/BoldAngelicGartersnake';
         return(
             <div className="homepageMainDiv">
-                <div>
+                <div className="providePara">
                     Welcome
                 </div>
-                <div>
-                    
+                <div className="providePara">
+                    Hi Esha
                 </div>
             </div>
         )
