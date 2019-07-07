@@ -10,7 +10,10 @@ export default class HomePageContainer extends Component{
                     Welcome
                 </div>
                 <div className="providePara">
-                    Hi Esha
+                <video  width="100%" autoPlay loop>
+                    <source src="https://gfycat.com/gifs/detail/GrandGraciousGallinule" type="video/mp4"/>
+                    Your browser does not support HTML5 video.
+                </video>
                 </div>
             </div>
         )

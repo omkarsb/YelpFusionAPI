@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import Timestamp from 'react-timestamp';
+import {dragElement} from '../../JavascriptFunctions/DraggableElement'
 //import Geolocation from 'react-geolocation'
-import './weatherappcard.css'
+import './profilecard.css'
 import { GoogleMap, Map, InfoWindow, Marker, GoogleApiWrapper, MapWithAMarker} from 'google-maps-react';
 
-class WeatherAppCard extends Component {
+class ProfileCard extends Component {
 
     constructor(props) {
         super(props);
@@ -54,14 +55,14 @@ class WeatherAppCard extends Component {
         //const cardmain = card.temp;
 
         return(
-            <div className="WeatherAppCard__MainDiv">
-                    <div className="WeatherAppCard__MainDiv__Header">
-                    <span className="WeatherAppCard__MainDiv__Header__CityName">{this.props.cards.NameOnCard}</span>
+            <div className="ProfileCard__MainDiv" onClick={dragElement}>
+                    <div className="ProfileCard__MainDiv__Header">
+                    <span className="ProfileCard__MainDiv__Header__CityName">{this.props.cards.NameOnCard}</span>
                         <span onClick={this.handleTemp}>{"\xB0"}C | {"\xB0"}F</span>
                     </div>
-                    <div className="WeatherAppCard__MainDiv__Body">
-                        <span className="WeatherAppCard__MainDiv__Body__Temp"> {JSON.stringify(this.state.Temp)}{"\xB0"}{this.state.tempUnit} </span>
-                        <div className="WeatherAppCard__MainDiv__Body__IconDescTag">
+                    <div className="ProfileCard__MainDiv__Body">
+                        <span className="ProfileCard__MainDiv__Body__Temp"> {JSON.stringify(this.state.Temp)}{"\xB0"}{this.state.tempUnit} </span>
+                        <div className="ProfileCard__MainDiv__Body__IconDescTag">
                             <img src={icon} />
                             {this.props.cards.Data.weather[0].description}
                         </div>
@@ -73,11 +74,11 @@ class WeatherAppCard extends Component {
                         }}>
                             <Marker onClick={this.onMarkerClick}
                                     name={'Current location'}
-                                    position={this.state.currentLatLng} />
+                                    position={{lat : this.state.lat, lng : this.state.lng }}/>
 
                         </Map>
                     </div>
-                    <div className="WeatherAppCard__MainDiv__Footer">
+                    <div className="ProfileCard__MainDiv__Footer">
                         <Timestamp time={this.props.cards.Data.dt} format='full' includeDay />
                     </div>
             </div>
@@ -87,4 +88,4 @@ class WeatherAppCard extends Component {
 
 export default GoogleApiWrapper({
     apiKey: 'AIzaSyBJ7MnqgHV0GzVG31gByJ4eClVm4pUp5Fg'
-  })(WeatherAppCard)
+  })(ProfileCard)

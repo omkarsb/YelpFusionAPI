@@ -1,13 +1,15 @@
 .appMainDiv{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    overflow: auto;
     justify-content: space-between;
 }
 
 .appFooter{
-    position: relative;
-    bottom: 0px;
     width: 100%;
     background: #686868;
  }
+
+.appRoutes{
+    flex-grow: 1;
+}

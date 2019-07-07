@@ -7,8 +7,12 @@ export default class Header extends Component{
             <div className="HeaderMainDiv">
                 <div className="HeaderTabs">
                     <div className="HeaderTab">PortFolio</div>
-                    <div className="HeaderTab">Resume</div>
-                    <div className="HeaderTab">About</div>
+                    <div className="HeaderTab">
+                        <a href="">Resume</a>
+                    </div>
+                    <div className="HeaderTab">
+                        <a href="https://about.me/omkarsawantbhosle">About</a>
+                    </div>
                     <div className="HeaderTab">Projects</div>
                 </div>
             </div>

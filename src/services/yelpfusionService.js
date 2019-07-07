@@ -4,7 +4,7 @@ export default {
     getAll() {
         return axios.get('https://api.yelp.com/v3/businesses/search', {
             headers: {
-                Authorization: 'qGU1w1qoPTfUjT8p6AQAHjm_3ZsLB51od2pAH8WNpgEO68KiePXlPu3IqbCXG69wnBcK6Srofe4M25JwQ3x9Sqn9Xe5DuaCIDV13CKrEyYIOqVvicNNgEql08mV3WnYx'
+                'Authorization' : 'Bearer ' + '4bd04198b3942c3eae9ca18ae709f36d'
             }});
     },
     get(id){},/*

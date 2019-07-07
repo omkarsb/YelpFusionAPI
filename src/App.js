@@ -12,7 +12,9 @@ class App extends Component {
       <BrowserRouter>
       <div className="appMainDiv">
           <Header />
+        <div className="appRoutes">
           <Routes />
+        </div>
         <div className="appFooter">
           <Footer />
         </div>

@@ -1,4 +1,4 @@
-.WeatherAppCard__MainDiv{
+.ProfileCard__MainDiv{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     background: #fff;
     border-radius: 50px;
@@ -10,35 +10,35 @@
     position: relative;
     width: 300px;
 }
-.WeatherAppCard__MainDiv__Header{
+.ProfileCard__MainDiv__Header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.WeatherAppCard__MainDiv__Header__CityName{
+.ProfileCard__MainDiv__Header__CityName{
     font-size: 34px;
 }
 
-.WeatherAppCard__MainDiv__Body{
+.ProfileCard__MainDiv__Body{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-.WeatherAppCard__MainDiv__Body__Temp{
+.ProfileCard__MainDiv__Body__Temp{
     transition: width 100ms ease-in-out;
     font-size: 64px;
 }
 
-.WeatherAppCard__MainDiv__Body__IconDescTag{
+.ProfileCard__MainDiv__Body__IconDescTag{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
 
-.WeatherAppCard__MainDiv__Footer{
+.ProfileCard__MainDiv__Footer{
         align-self: center;
         border-top: solid black 3px;
     }
