@@ -32,7 +32,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-social-icons": "^2.8.1",
+    "react-social-icons": "^2.9.0",
     "webpack-cli": "^2.1.2"
   }
 }
