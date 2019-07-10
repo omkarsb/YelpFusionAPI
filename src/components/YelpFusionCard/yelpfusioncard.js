@@ -21,7 +21,7 @@ export default class YelpFusionCard extends Component{
         return(
             <div className="">
                 <div className="">
-                    
+                    <div>{this.state.experiences}</div>
                 </div>
             </div>
         )
