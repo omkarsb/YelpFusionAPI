@@ -1,6 +1,12 @@
 import React, {Component} from 'react'
-import { SocialIcon } from 'react-social-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faYoutube,
+    faFacebook,
+    faTwitter,
+    faInstagram,
+    faLinkedin
+  } from "@fortawesome/free-brands-svg-icons";
 import './footer.css'
 
 export default class Footer extends Component{
@@ -12,10 +18,10 @@ export default class Footer extends Component{
                 </div>
                 <div className="SocialMedia">
                     <div className="SocialMediaBlock">
-                        <SocialIcon url="https://www.linkedin.com/in/omkar-s-73345782/" />
+                        <a href="https://www.linkedin.com/in/omkar-s-73345782/" target="_blank"><FontAwesomeIcon icon={faLinkedin} size="3x" /></a>
                     </div>
-                    <div>
-                        <SocialIcon url="https://www.facebook.com/omkarsb" />
+                    <div className="SocialMediaBlock">
+                        <a href="https://www.facebook.com/omkarsb" target="_blank"><FontAwesomeIcon icon={faFacebook} size="3x" /></a>
                     </div>
                 </div>
             </div>

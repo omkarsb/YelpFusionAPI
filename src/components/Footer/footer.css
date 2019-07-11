@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to left, #F4F4F4, #CCCCCC);
+    background-image: linear-gradient(to left, rgb(4, 244, 192), #CCCCCC);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: auto;
@@ -31,3 +31,5 @@
     height: 100px;
     width: 100px;
 }
+
+.SocialMediaBlock a {color:#3b5998;}
