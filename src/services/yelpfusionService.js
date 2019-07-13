@@ -4,7 +4,7 @@ export default {
     getAll() {
         return axios.get('https://cors-git.herokuapp.com/https://api.yelp.com/v3/businesses/search', {
             headers: {
-                'Authorization' : 'Bearer ' + '4bd04198b3942c3eae9ca18ae709f36d'
+                Authorization : `Bearer ${process.env.REACT_APP_YELP_FUSION_API_KEY}`
             }});
     },
     get(id){},/*
