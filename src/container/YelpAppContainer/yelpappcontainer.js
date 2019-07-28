@@ -62,8 +62,8 @@ export default class YelpAppContainer extends Component{
                         placeholder="Breakfast Brunch"
                         className="Input"
                         onChange={(e) => {
-                            console.log("Category Change " + e.target.value + " "+ this.state.experiences)
-                            //this.handleCategories(e)
+                            //console.log("Category Change " + e.target.value + " "+ this.state.experiences)
+                            this.handleCategories(e)
                         }}
                         inputProps={{
                         'aria-label': 'Description',
