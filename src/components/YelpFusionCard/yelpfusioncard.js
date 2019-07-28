@@ -56,6 +56,13 @@ class YelpFusionCard extends Component {
 
         let cat2,cat3
 
+        if(this.state.temp.categories[1]){
+            cat2 = " | "+this.state.temp.categories[1].title
+        }
+        if(this.state.temp.categories[2]){
+            cat3 = " | " + this.state.temp.categories[2].title
+        }
+
             
         return(
             <div className="YelpFusionCard__MainDiv" onClick={dragElement}>
@@ -65,6 +72,8 @@ class YelpFusionCard extends Component {
                         </div>
                         <div className="YelpFusionCard__MainDiv__Header__Categories">
                             {this.state.temp.categories[0].title}
+                            {cat2}
+                            {cat3}
 
                         </div>
                         <div className="YelpFusionCard__MainDiv__Header__Phone">
