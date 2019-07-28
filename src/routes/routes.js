@@ -11,7 +11,7 @@ export default () => (
     <Switch>
         <Route exact path="/" component={HomePageContainer} />
         <Route path="/home" component={HomePageContainer} />
-        <Route path="/yelpyelp" component={YelpAppContainer}/>
+        <Route path="/YelpFusionAPI" component={YelpAppContainer}/>
         <Route path="/WeatherApp" component={WeatherAppContainer}/>
         <Route path="/CollageMaker" component={CollageMakerContainer}/>
         <Route path="/ProfileCards" component={ProfileCardsContainer}/>
