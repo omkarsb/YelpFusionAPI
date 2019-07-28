@@ -1,0 +1,33 @@
+.yelpFusionContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.yelpFusionContainer__yelpFusionCardHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.yelpFusionContainer__Search{
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yelpFusionContainer__Search__SearchBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.yelpFusionContainer__Icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}

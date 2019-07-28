@@ -1,15 +1,19 @@
 .appMainDiv{
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    min-height: 100vh;
     justify-content: space-between;
 }
 
+.appRoutes{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
 .appFooter{
+    height: 100px;
     width: 100%;
     background: #686868;
+    margin-top: 250px; 
  }
 
-.appRoutes{
-    flex-grow: 1;
-}

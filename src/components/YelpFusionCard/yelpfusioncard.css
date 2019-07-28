@@ -1,0 +1,62 @@
+.YelpFusionCard__MainDiv{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 550px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+	-moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+	-webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+	-o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+}
+
+
+.YelpFusionCard__MainDiv__Header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.YelpFusionCard__MainDiv__Header__Name{
+    margin: 15px;
+    font-size: 25px; 
+}
+
+
+.YelpFusionCard__MainDiv__Header__Categories{
+    font-size: 15px; 
+}
+
+
+.YelpFusionCard__MainDiv__Header__Phone{
+    margin: 8px;
+    font-size: 15px; 
+}
+
+
+.YelpFusionCard__MainDiv__Body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.YelpFusionCard__MainDiv__Body__Ratings{
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+.YelpFusionCard__MainDiv__Body__IconDescTag{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
