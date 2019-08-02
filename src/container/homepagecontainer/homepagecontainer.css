@@ -1,6 +1,54 @@
 .homepageMainDiv{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #3d3d3f;
+}
+
+.homepageMainDiv__Name{
+    font-size: 120%;
+    margin: 20px;
+}
+
+.homepageMainDiv__Row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 
+.homepageMainDiv__Dev{
+    font-size: 220%;
+    margin: 30px;
+}
+
+.homepageMainDiv__API__Header{
+    font-size: 120%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepageMainDiv__API:hover ~ .homepageMainDiv__API__Desc{
+    opacity: 1;
+    transition: opacity .50s ease-in-out;
+}
+
+.homepageMainDiv__API__Desc{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:30px;
+    opacity: 0;
+}
+
+
+
+.homepageMainDiv__Button{
+    margin: 20px;
+}

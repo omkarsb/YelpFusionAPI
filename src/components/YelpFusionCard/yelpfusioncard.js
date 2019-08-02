@@ -4,6 +4,7 @@ import {dragElement} from '../../JavascriptFunctions/DraggableElement'
 //import Geolocation from 'react-geolocation'
 import './yelpfusioncard.css'
 import StarRatings from 'react-star-ratings';
+import ReactCardFlip from 'react-card-flip';
 import { GoogleMap, Map, InfoWindow, Marker, GoogleApiWrapper, MapWithAMarker} from 'google-maps-react';
 
 class YelpFusionCard extends Component {
@@ -12,7 +13,13 @@ class YelpFusionCard extends Component {
         super(props);
         this.state = {
             temp : this.props.exp,
+            isFlipped: false,
+            currLatLong: {
+                lat: 0,
+                long: 0
+            }
         };
+        this.handleClick = this.handleClick.bind(this);
     //    this.handleCategories = this.handleCategories.bind(this);
     }
 
@@ -34,12 +41,40 @@ class YelpFusionCard extends Component {
         // console.log('this is from recieve props')
         // console.log(props)
         // console.log(state)
-        if(props.exp !== state.temp){
+        if(props.exp.id !== state.temp.id){
             return{
-                temp : props.exp
+                temp : props.exp,
             }
         }
     }
+
+
+    componentDidMount(){
+        this.getGeoLocation()
+    }
+
+    getGeoLocation = () => {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            position => {
+              this.setState(prevState => ({
+                currLatLong: {
+                    ...prevState.currentLatLng,
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                }
+            }))
+            }
+          )
+        } else {
+          error => console.log(error)
+        }
+      }
+
+    handleClick(e) {
+        e.preventDefault();
+        this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+      }
 
     // componentDidUpdate(prevProps, prevState) {
     //     console.log(this.props.exp)
@@ -69,6 +104,7 @@ class YelpFusionCard extends Component {
                     <div className="YelpFusionCard__MainDiv__Header">
                         <div className="YelpFusionCard__MainDiv__Header__Name">
                             {this.state.temp.name}
+                            {/* {this.state.currLatLong.lat} */}
                         </div>
                         <div className="YelpFusionCard__MainDiv__Header__Categories">
                             {this.state.temp.categories[0].title}

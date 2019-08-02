@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to left, rgb(4, 244, 192), #CCCCCC);
+    background-image: linear-gradient(to right, #ed8a63, #c9af98);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: auto;

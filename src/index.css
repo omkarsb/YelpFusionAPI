@@ -2,6 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #4abdac;
+  background-image: linear-gradient(to right, #ed8a63, #c9af98);
   font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
