@@ -3,6 +3,9 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10px;  
 }
 
 .appRoutes{
@@ -10,8 +13,8 @@
 }
 
 .appFooter{
-    height: 100px;
     width: 100%;
     background: #686868;
+    margin: 10px;
 }
 

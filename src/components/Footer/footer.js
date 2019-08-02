@@ -13,9 +13,6 @@ export default class Footer extends Component{
     render(){
         return(
             <div className="footer">
-                <div className="MainLabel">
-                    <img className="footerLogo" src={require('../../img/footerlogo.png')} />
-                </div>
                 <div className="SocialMedia">
                     <div className="SocialMediaBlock">
                         <a href="https://www.facebook.com/omkarsb" target="_blank"><FontAwesomeIcon icon={faFacebook} size="3x" /></a>

@@ -96,8 +96,8 @@ export default class HomePageContainer extends Component{
                     {' }'}
                     </div>
 
-                    <div className="homepageMainDiv__API__Desc">            
-                        <span>APIs have opened up opportunites. (^)So many categories, so much data! </span> 
+                    <div className="homepageMainDiv__API__Desc">    
+                        <span>APIs have opened up opportunites. So many categories, so much data! </span> 
                         <span>They have changed the Web Scene.</span>
                         <span>Web Frameworks have smoothened out to consume them.</span>
                         <span>I'm on a mission to contribute to and witness this amalgamation of Data and UI!</span>

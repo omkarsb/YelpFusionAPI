@@ -44,7 +44,12 @@
     align-items: center;
     text-align: center;
     margin:30px;
-    opacity: 0;
+    opacity: 0.1;
+}
+
+.homepageMainDiv__API__Desc:hover{
+    opacity: 1;
+    transition: opacity .50s ease-in-out;
 }
 
 .homepageMainDiv__currProject{
@@ -63,9 +68,13 @@
     justify-content: center;
     align-items: center;
     background-color:#D32323;
-    outline-style: double;
-    outline-width: 1px;
+    border: 1px solid;
+    border-radius: 5px;
     margin : 20px;
+    box-shadow: 3px -3px 3px  rgba(0,0,0,0.6);
+	-moz-box-shadow: 3px -3px 3px  rgba(0,0,0,0.6);
+	-webkit-box-shadow: 3px -3px 3px  rgba(0,0,0,0.6);
+	-o-box-shadow: 3px -3px 3px  rgba(0,0,0,0.6);
 }
 
 .homepageMainDiv__currProject__Container:hover{

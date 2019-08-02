@@ -1,8 +1,7 @@
 .HeaderTabs{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 10%;
+    justify-content: space-between;
 }
 
 .HeaderTabs__onLeft{
@@ -10,6 +9,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow-x: scroll;
+}
+
+.HeaderTabs__onRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
 }
 
 .HeaderTab__Github, .HeaderTab__Portfolio, .HeaderTab__Home, .HeaderTab__Resume, .HeaderTab_aboutMe,.HeaderTab__LinkedIn{
@@ -19,4 +27,10 @@
 .HeaderTab__Github:hover, .HeaderTab__Portfolio:hover, .HeaderTab__Home:hover, .HeaderTab__Resume:hover, .HeaderTab_aboutMe:hover, .HeaderTab__LinkedIn:hover{
     opacity: 0.5;
 }
+
+.HeaderTabs__onLeft__Logo__Icon{
+    height: 100px;
+    width: 100px;
+}
+
 
