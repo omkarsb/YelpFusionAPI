@@ -18,9 +18,6 @@ export default class Footer extends Component{
                 </div>
                 <div className="SocialMedia">
                     <div className="SocialMediaBlock">
-                        <a href="https://www.linkedin.com/in/omkar-s-73345782/" target="_blank"><FontAwesomeIcon icon={faLinkedin} size="3x" /></a>
-                    </div>
-                    <div className="SocialMediaBlock">
                         <a href="https://www.facebook.com/omkarsb" target="_blank"><FontAwesomeIcon icon={faFacebook} size="3x" /></a>
                     </div>
                     <div className="SocialMediaBlock">

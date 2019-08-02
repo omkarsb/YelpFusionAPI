@@ -47,8 +47,27 @@
     opacity: 0;
 }
 
+.homepageMainDiv__currProject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+}
 
+.homepageMainDiv__currProject__Container{
+    height: 100px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:#D32323;
+    outline-style: double;
+    outline-width: 1px;
+    margin : 20px;
+}
 
-.homepageMainDiv__Button{
-    margin: 20px;
+.homepageMainDiv__currProject__Container:hover{
+    opacity: 0.5;
 }

@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-brands-svg-icons";
 import ReactSVG from 'react-svg';
-
+import {Link} from 'react-router-dom';
 import Typed from 'react-typed';
 
 import apiListService from '../../services/apiListService'
@@ -74,7 +74,7 @@ export default class HomePageContainer extends Component{
                 </div>
  
                 <div className="homepageMainDiv__Row">
-                
+
                     <div className="homepageMainDiv__API__Header">            
                         <span>I </span>
                         <span className="homepageMainDiv__API__Icon">    
@@ -104,11 +104,17 @@ export default class HomePageContainer extends Component{
                     </div>
                 </div>  
 
+
                 <div className="homepageMainDiv__Row">
-                    <div className="homepageMainDiv__Button">
-                        <Button style={{margin:'10px'}} variant="contained" color="primary" className='submit' onClick={this.handleClick} >
-                            CHECK MY WORK
-                        </Button>
+                    <div className="homepageMainDiv__currProject">
+                        <span>
+                            Currently Working on : 
+                        </span>
+                        <div className="homepageMainDiv__currProject__Container">
+                            <Link to="/YelpFusionAPI">
+                                <img height="60px" src={require('../../img/Yelp_trademark_RGB.png')} />
+                            </Link>
+                        </div>
                     </div>
                     {/* <WelcomePage/> */}
                 </div>

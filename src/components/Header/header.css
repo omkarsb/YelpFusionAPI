@@ -1,17 +1,22 @@
-.HeaderMainDiv{
+.HeaderTabs{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 10%;
 }
 
-.HeaderTabs{
+.HeaderTabs__onLeft{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.HeaderTab{
+.HeaderTab__Github, .HeaderTab__Portfolio, .HeaderTab__Home, .HeaderTab__Resume, .HeaderTab_aboutMe,.HeaderTab__LinkedIn{
     margin: 15px;
 }
+
+.HeaderTab__Github:hover, .HeaderTab__Portfolio:hover, .HeaderTab__Home:hover, .HeaderTab__Resume:hover, .HeaderTab_aboutMe:hover, .HeaderTab__LinkedIn:hover{
+    opacity: 0.5;
+}
+
