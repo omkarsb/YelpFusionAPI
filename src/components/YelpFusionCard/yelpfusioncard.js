@@ -137,10 +137,15 @@ class YelpFusionCard extends Component {
 
 
                     <div className="YelpFusionCard__MainDiv__Footer">
-                            <Map google={this.props.google} style={{height: '150px'}} zoom={14} initialCenter={{
-                                lat: this.state.temp.coordinates.latitude,
-                                lng: this.state.temp.coordinates.longitude
-                            }}>
+                            <Map google={this.props.google} 
+                                style={{height: '150px'}} 
+                                zoom={14} 
+                                center={{
+                                    lat: this.state.temp.coordinates.latitude,
+                                    lng: this.state.temp.coordinates.longitude
+                                }}
+                        
+                            >
                                 <Marker onClick={this.onMarkerClick}
                                         name={'Current location'}
                                         position={{lat : this.state.temp.coordinates.latitude, lng : this.state.temp.coordinates.longitude }}/>
