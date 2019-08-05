@@ -5,7 +5,7 @@ import Footer from './components/Footer/footer'
 import Routes from './routes/routes'
 
 import './App.css';
-
+ 
 class App extends Component {
   render() {
     return (
